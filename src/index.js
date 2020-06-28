@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import BaseRoute from './routes/BaseRoute'
+import 'css/style.css'
 import * as serviceWorker from './serviceWorker';
+import { Container } from 'semantic-ui-react'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ReactDOM.render(  
+    <Container>
+      <BaseRoute />
+    </Container>,  
   document.getElementById('root')
 );
 
